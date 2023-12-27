@@ -41,7 +41,7 @@ class Graph extends Component<IProps, {}> {
       elem.setAttribute('view', 'y_line'); // kind of graph we want to visualize the data with
       elem.setAttribute('row-pivots', '["timestamp"]'); // map each datapoint based on its timestamp
       // focus on a particular part of a datapoint's data along the y-axis
-      elem.setAttribute('columns', '["ratio", "lower_bound", "upper_bound", "trigger_alert"])');
+      elem.setAttribute('columns', '["ratio", "lower_bound", "upper_bound", "trigger_alert"]');
       elem.setAttribute('aggregates', JSON.stringify({ // consolidate data points with the same timestamp
         price_abc: 'avg',
         price_def: 'avg',
